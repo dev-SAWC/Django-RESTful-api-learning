@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'apps.utils.apps.UtilsConfig',
     'apps.users.apps.UsersConfig',
+    'apps.waitlist.apps.WaitlistConfig',
 
     'apps.certificates.apps.CertificatesConfig',
 ]
