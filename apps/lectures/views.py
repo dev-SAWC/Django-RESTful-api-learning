@@ -1,3 +1,18 @@
 from django.shortcuts import render
+from rest_framework import serializers, viewsets
 
-# Create your views here.
+from .models import Lecture
+
+
+class LectureSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Lecture
+        fields = ('id','Tite','description',
+                  'lecturer_name','date',
+                  'duration','slides_url','is_required')
+
+
+class LectureViewSet(viewsets.ModelViewSet):
+    queryset = Lecture.objects.all()
+    serializer_class = LectureSerializer
+

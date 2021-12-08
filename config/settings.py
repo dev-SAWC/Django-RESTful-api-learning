@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'apps.utils.apps.UtilsConfig',
     'apps.users.apps.UsersConfig',
     'apps.waitlist.apps.WaitlistConfig',
-
+    'apps.lectures.apps.LecturesConfig',
     'apps.certificates.apps.CertificatesConfig',
 ]
 
